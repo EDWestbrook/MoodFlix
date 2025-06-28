@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodFlix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>MoodFlix 🎬</h1>
+    <p>Select your mood and genre to get a movie recommendation!</p>
+    
+    <div class="form-group">
+      <label for="mood">Your Mood:</label>
+      <select id="mood">
+        <option value="">--Choose Mood--</option>
+        <option value="relaxed">Relaxed</option>
+        <option value="adventurous">Adventurous</option>
+        <option value="social">Social</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="genre">Preferred Genre:</label>
+      <select id="genre">
+        <option value="">--Choose Genre--</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+      </select>
+    </div>
+
+
+    <button id="recommendBtn">Get Recommendation</button>
+    
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
